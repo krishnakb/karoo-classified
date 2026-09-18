@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Classified</string>
+    <string name="extension_name">Classified</string>
+    <string name="ratio_display_name">Classified</string>
+    <string name="ratio_description">Classified Powershift hub ratio state</string>
+    <string name="ratio_placeholder">--</string>
+    <string name="rear_gear_display_name">Rear Gear+</string>
+    <string name="rear_gear_description">Rear gear read directly from the derailleur, unaffected by Classified pairing</string>
+</resources>

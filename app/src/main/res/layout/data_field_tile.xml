@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A complete data-field tile: icon, label and value, all on one background.
+
+  Karoo draws its own header above a data field and does not colour it, so filling
+  only the value area looked unlike the device's native coloured tiles. This view
+  renders the label itself and Karoo's header is suppressed
+  (UpdateGraphicConfig(showHeader = false)), so the background covers everything.
+
+  The header mirrors Karoo's own tiles: icon pinned to the left, label text to the
+  right. The value follows the user's global alignment setting.
+
+  Drawing the header here rather than letting Karoo draw it is deliberate for both
+  fields. Karoo's header consumes 69px of a 126px tile, leaving 57px for the value;
+  this label row costs less, so the value renders noticeably larger at the same
+  tile size. It also lets the background fill the whole tile, which Karoo's header
+  would leave uncoloured.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tile_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:id="@+id/tile_label_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tile_icon"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/ic_classified" />
+
+        <TextView
+            android:id="@+id/tile_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tile_value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textStyle="bold" />
+</LinearLayout>

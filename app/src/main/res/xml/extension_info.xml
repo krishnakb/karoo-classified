@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionInfo
+    displayName="@string/extension_name"
+    icon="@drawable/ic_classified"
+    id="classified"
+    scansDevices="false">
+    <DataType
+        description="@string/ratio_description"
+        displayName="@string/ratio_display_name"
+        graphical="true"
+        icon="@drawable/ic_classified"
+        typeId="classified-ratio-state" />
+    <DataType
+        description="@string/rear_gear_description"
+        displayName="@string/rear_gear_display_name"
+        graphical="true"
+        icon="@drawable/ic_rear_gear"
+        typeId="derailleur-rear-gear" />
+</ExtensionInfo>

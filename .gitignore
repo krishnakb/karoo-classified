@@ -1,0 +1,21 @@
+# Build output
+build/
+.gradle/
+captures/
+.cxx/
+.externalNativeBuild/
+
+# Local machine config - contains SDK paths and may contain tokens
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Investigation artifacts from tools/remap-sensorservice.sh
+# (pulled APKs and decompiled sources; large, and not ours to redistribute)
+build/remap/
+*.apk

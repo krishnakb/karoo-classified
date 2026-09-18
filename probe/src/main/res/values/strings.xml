@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Classified Probe</string>
+    <string name="check_ant">Check ANT+ access</string>
+    <string name="scan_ble">Scan BLE (60s)</string>
+    <string name="clear">Clear</string>
+    <string name="shift_stream">Shifting streams</string>
+</resources>

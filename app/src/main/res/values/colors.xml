@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Explicit colours rather than theme attributes: RemoteViews resolve theme
+      attributes against the host, which rendered the value in a low-contrast grey
+      inside Karoo's field box.
+    -->
+
+    <!-- Reduced ratio engaged: fill the whole field so it reads at a glance. -->
+    <color name="ratio_on_background">#00C853</color>
+    <color name="ratio_on_text">#000000</color>
+
+    <!-- Direct drive and no-data: plain field, no fill. -->
+    <color name="ratio_idle_background">#00000000</color>
+    <color name="ratio_off_text">#FFFFFF</color>
+    <color name="ratio_unknown_text">#9E9E9E</color>
+</resources>
